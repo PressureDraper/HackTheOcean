@@ -1,0 +1,95 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.55.4">
+    <title>Pollutants</title>
+
+    <link rel="canonical" href="{% static 'img/logo.png' %}">
+
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'docs/4.3/dist/css/bootstrap.css' %}" rel="stylesheet">
+
+
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="{% static 'docs/4.3/assets/img/favicons/apple-touch-icon.png' %}" sizes="180x180">
+    <link rel="icon" href="{% static 'docs/4.3/assets/img/favicons/favicon-32x32.png' %}" sizes="32x32" type="image/png">
+    <link rel="icon" href="{% static 'docs/4.3/assets/img/favicons/favicon-16x16.png' %}" sizes="16x16" type="image/png">
+    <link rel="manifest" href="{% static 'docs/4.3/assets/img/favicons/manifest.json' %}">
+    <link rel="mask-icon" href="{% static 'docs/4.3/assets/img/favicons/safari-pinned-tab.svg' %}" color="#563d7c">
+    <link rel="icon" href="{% static 'docs/4.3/assets/img/favicons/favicon.ico' %}">
+    <meta name="msapplication-config" content="{% static 'docs/4.3/assets/img/favicons/browserconfig.xml' %}">
+    <meta name="theme-color" content="#563d7c">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{% static 'css/pollutants.css' %}">
+
+    
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/carousel.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="nav-link" href="/"><img src="{% static 'img/logo.png' %}"><span class="sr-only">(current)</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main role="main">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="featurette-heading">{{ title }}</h2>
+      </div>
+    </div>
+    <div class="row featurette">
+      <div class="col-md-6 main">
+        {% for data in info %}
+        <div class="col-6 data-container">
+          <p class="data-text">{{ data }}</p>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="col-md-6 img">
+        <img id="cuida" src="{% static 'img/contaminantes2.webp' %}" alt="importante" width="auto" height="470"> 
+      </div>
+    </div>
+  </div>
+
+    <hr class="featurette-divider">
+
+  <!-- FOOTER -->
+  <footer align="right" class="container">
+    <p align="left">&copy; 2022- EQUIPO ALFA BUENA MARAVILLA ONDA DINAMITA ESCUADRON LOBO 3000</p>
+    <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+  <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+</svg></a>
+  </footer>
+</main>
+
+
+    
+      
+    <script src="{% static 'docs/4.3/dist/js/bootstrap.bundle.js' %}"></script>
+      
+
+      
+    
+  </body>
+</html>

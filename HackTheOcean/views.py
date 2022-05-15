@@ -1,4 +1,3 @@
-from multiprocessing import context
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.http import JsonResponse
@@ -8,14 +7,14 @@ import json
 import os
 
 def page1(request):
-    x = 'testing.html'
+    template = 'testing.html'
     if request.method == 'GET':
-        return render(request, x)
+        return render(request, template)
 
 def reflejar_api(request):
     if request.method == 'GET':
         #Se abre el archivo .json ubicado enla raíz del proyecto
-        with open('explorers.json') as file:
+        with open('datos.json') as file:
             #Se carga el json en la variable data
             data = json.load(file)
 
@@ -33,18 +32,38 @@ def api(url, params={}):
         return response.json()
 
 def get_data(params={}):
-    response = api('http://localhost:8000/apilocal', params)
+    response = api('http://localhost:8000/api', params)
     if response:
         return response
-        # user = response.get('results')[0]
-        # return user.get('name').get('first')
-
     return
 
-def hello(request):
+def index(request):
+    if request.method == 'GET':
+        return render(request, 'index.html', {})
+
+def pollutants(request):
     if request.method == 'GET':
         data = get_data()
         context = {
-            'name': data[0]['name']
+            'title': data[0]['name'],
+            'info': data[0]['contaminantes'] 
         }
-        return render(request, 'hello.html', context)
+        return render(request, 'contaminantes.html', context)
+
+def species(request):
+    if request.method == 'GET':
+        data = get_data()
+        context = {
+            'title': data[1]['name'],
+            'info': data[1]['especies'] 
+        }
+        return render(request, 'especies.html', context)
+
+def solutions(request):
+    if request.method == 'GET':
+        data = get_data()
+        context = {
+            'title': data[2]['name'],
+            'info': data[2]['soluciones'] 
+        }
+        return render(request, 'soluciones.html', context)

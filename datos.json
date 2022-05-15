@@ -1,0 +1,36 @@
+[
+{
+  "name": "Principales Contaminantes",
+  "contaminantes": [
+    "Basura",
+    "Aguas Residuales",
+    "Petróleo",
+    "Metales Pesados"
+  ]
+},
+{
+  "name": "Especies afectadas",
+  "especies": [
+    "Ballenas",
+    "Focas",
+    "Tortugas",
+    "Aves Marinas",
+    "Peces",
+    "Lobos Marinos",
+    "Corales",
+    "Delfines"
+  ]
+},
+{
+  "name": "Soluciones",
+  "soluciones": [
+    "Prohibir Desechables",
+    "Aumentar Financiamiento",
+    "Alianzas",
+    "Crear Conciencia",
+    "Usar Biodegradables",
+    "Control Industrial",
+    "Fortelecer Leyes"
+  ]
+}
+] 

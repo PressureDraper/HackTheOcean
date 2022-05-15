@@ -1,0 +1,52 @@
+.main {
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.data-text {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.data-container {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    word-wrap: break-word;
+    margin: auto;
+    height: 60px;
+}
+
+.featurette-heading {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.img {
+    padding: 0%;
+    margin: 0%;
+}
+
+.mas {
+    display: flex;
+    text-align: center;
+    margin-top: -15%;
+    border-radius: 10%;
+    margin-left: 3%;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}

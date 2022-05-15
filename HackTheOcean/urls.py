@@ -18,7 +18,9 @@ from django.urls import path
 from HackTheOcean.views import *
 
 urlpatterns = [
-    path('', page1),
-    path('api/', hello),
-    path('apilocal/', reflejar_api),
+    path('', index),
+    path('api/', reflejar_api),
+    path('pollutants/', pollutants),
+    path('species/', species),
+    path('solutions/', solutions),
 ]
