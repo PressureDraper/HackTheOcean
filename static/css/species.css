@@ -4,6 +4,11 @@
     flex-wrap: wrap;
 }
 
+.tbs {
+    margin-right: -3%;
+    background-color: red;
+}
+
 .data-text {
     font-weight: 600;
     font-size: 1.2rem;
