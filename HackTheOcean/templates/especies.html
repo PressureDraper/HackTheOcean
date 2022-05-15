@@ -58,15 +58,29 @@
       </div>
     </div>
     <div class="row featurette">
-      <div class="col-md-6">
+      <div class="col-md-6 img mt-5">
         <img class="mas" src="{% static 'img/afectadas2.jpg' %}" alt="peces" width="auto" height="500"> 
       </div>
-      <div class="col-md-6 main">
-        {% for data in info %}
-        <div class="col-6 data-container">
+      <div class="col-md-6 main text-center p-4">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th>#</th>
+              <th scope="col">Especies</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for data in info %}
+            <tr>
+              <th scope="row">{{ forloop.counter }}</th>
+              <td>{{ data }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <!-- <div class="col-6 data-container">
           <p class="data-text">{{ data }}</p>
-        </div>
-        {% endfor %}
+        </div> -->
       </div>
   </div>
 
@@ -75,6 +89,7 @@
     <!-- /END THE FEATURETTES -->
 
 
+  </main>
   <!-- FOOTER -->
   <footer align="right" class="container">
     <p align="left">&copy; 2022- EQUIPO ALFA BUENA MARAVILLA ONDA DINAMITA ESCUADRON LOBO 3000</p>
@@ -82,7 +97,6 @@
   <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
 </svg></a>
   </footer>
-</main>
 
 
     

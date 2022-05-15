@@ -59,14 +59,28 @@
       </div>
     </div>
     <div class="row featurette">
-      <div class="col-md-6 main">
-        {% for data in info %}
-        <div class="col-6 data-container">
+      <div class="col-md-6 main text-center p-4">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th>#</th>
+              <th scope="col">Contaminantes</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for data in info %}
+            <tr>
+              <th scope="row">{{ forloop.counter }}</th>
+              <td>{{ data }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <!-- <div class="col-6 data-container">
           <p class="data-text">{{ data }}</p>
-        </div>
-        {% endfor %}
+        </div> -->
       </div>
-      <div class="col-md-6 img">
+      <div class="col-md-5 img mt-2">
         <img id="cuida" src="{% static 'img/contaminantes2.webp' %}" alt="importante" width="auto" height="470"> 
       </div>
     </div>
