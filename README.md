@@ -27,7 +27,8 @@ Informar sobre los múltiples contaminantes que afectan los Océanos así como l
 - Git
 - Github
 
-## Diagrama de solución
+## Diagrama General
+![diagrama](static/img/dgm.jpeg)
 
 ## Resultados
 
@@ -41,3 +42,31 @@ A continuación se muestran capturas del funcionamiento de nuestro proyecto
 
 ![solucion](media/solucion.gif)
 
+<details open>
+<summary> 📕 Uso e Instalación </summary>
+ <img width="300" alt="image" src="https://1000marcas.net/wp-content/uploads/2021/06/Django-Logo.png">
+  
+  ## Ejecución Local de Proyecto
+  1. Instalar [python 3.8.10](https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe)
+  > Nota: Instalar [PIP](https://phoenixnap.com/kb/install-pip-windows) en caso de que no se haya instalado en el paso anterior.
+  2. Instalar Django en la carpeta que contendrá el proyecto, para ello en una terminal ubicada en la carpeta ejecutar:
+  ```
+  pip install django
+  ```
+  3. Una vez instalado django clonaremos el repositorio:
+  ```
+  git clone https://github.com/PressureDraper/HackTheOcean.git
+  ```
+  4. Ya clonado nuestro repositorio deberemos situarnos en la carpeta raíz del proyecto en donde se encuentra el archivo ```manage.py```, ejecutar el siguiente comando para iniciar el servidor:
+  ```
+  python3 manage.py runserver
+  ```
+  Ahora deberíamos poder ejecutarlo exitosamente.
+  
+  ![server](media/sv.png)
+  
+  Por último entraremos en cualquier navegador en la dirección que nos aparece en consola y listo 😊:
+   ```
+  http://localhost:8000
+  ```
+</details>
