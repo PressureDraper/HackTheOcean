@@ -1,3 +1,5 @@
+![equipo](media/team.png)
+
 # HackTheOcean
 
 Proyecto realizado para el hackathon "Hack the ocean", organizado por Microsoft.
